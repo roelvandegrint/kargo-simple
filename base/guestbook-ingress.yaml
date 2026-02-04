@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:  
-  name: guestbook  
+  name: guestbook-simple
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   rules:
-    - host: guestbook-dev.dev.vpp.eneco.com
+    - host: guestbook-simple-dev.dev.vpp.eneco.com
       http:
         paths:
           - backend:
