@@ -4,7 +4,6 @@ kind: Kustomization
 namespace: guestbook-simple
 
 resources:
-- guestbook-ingress.yaml
 - guestbook-ns.yaml
 - guestbook-deploy.yaml
 - guestbook-svc.yaml
